@@ -6,36 +6,36 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "type": "module",
     "newArchEnabled": true,
+
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.favortrader.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.favortrader.app"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
+    "extra": {
+      "firebase": {
+        "apiKey": "AIzaSyBJFyjkhw44awFtqUlk4w3BLaLwBlHrauY",
+        "authDomain": "favortrader-8d9ad.firebaseapp.com",
+        "projectId": "favortrader-8d9ad",
+        "storageBucket": "favortrader-8d9ad.firebasestorage.app",
+        "messagingSenderId": "846722705258",
+        "appId": "1:846722705258:web:266f3d6c42f9dfd84ea713",
+        "measurementId": "G-XFPENE2FL1"
+      }
     }
   }
 }
